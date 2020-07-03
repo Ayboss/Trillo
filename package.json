@@ -1,0 +1,21 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "trillo with flexbox and grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "prefix:css":"postcss --use autoprefixer -b 'last 5 versions' css/style.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/main.css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss-cli": "^7.1.1"
+  }
+}
